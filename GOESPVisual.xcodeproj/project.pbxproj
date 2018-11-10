@@ -12,6 +12,8 @@
 		C9B8EDFF2197321B00B94380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8EDFE2197321B00B94380 /* Assets.xcassets */; };
 		C9B8EE022197321B00B94380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B8EE002197321B00B94380 /* Main.storyboard */; };
 		C9B8EE0E2197321C00B94380 /* GOESPVisualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EE0D2197321C00B94380 /* GOESPVisualTests.swift */; };
+		C9B8EE1B219734F700B94380 /* GOESP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EE19219734F700B94380 /* GOESP.swift */; };
+		C9B8EE1C219734F700B94380 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EE1A219734F700B94380 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		C9B8EE092197321C00B94380 /* GOESPVisualTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOESPVisualTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B8EE0D2197321C00B94380 /* GOESPVisualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOESPVisualTests.swift; sourceTree = "<group>"; };
 		C9B8EE0F2197321C00B94380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B8EE19219734F700B94380 /* GOESP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GOESP.swift; path = GOESP/GOESP/Structure/GOESP.swift; sourceTree = SOURCE_ROOT; };
+		C9B8EE1A219734F700B94380 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = GOESP/GOESP/Structure/StringExtension.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		C9B8EDF92197321A00B94380 /* GOESPVisual */ = {
 			isa = PBXGroup;
 			children = (
+				C9B8EE18219734B400B94380 /* GOESP */,
 				C9B8EDFA2197321A00B94380 /* AppDelegate.swift */,
 				C9B8EDFC2197321A00B94380 /* ViewController.swift */,
 				C9B8EDFE2197321B00B94380 /* Assets.xcassets */,
@@ -93,6 +98,15 @@
 				C9B8EE0F2197321C00B94380 /* Info.plist */,
 			);
 			path = GOESPVisualTests;
+			sourceTree = "<group>";
+		};
+		C9B8EE18219734B400B94380 /* GOESP */ = {
+			isa = PBXGroup;
+			children = (
+				C9B8EE19219734F700B94380 /* GOESP.swift */,
+				C9B8EE1A219734F700B94380 /* StringExtension.swift */,
+			);
+			path = GOESP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B8EE1C219734F700B94380 /* StringExtension.swift in Sources */,
 				C9B8EDFD2197321A00B94380 /* ViewController.swift in Sources */,
 				C9B8EDFB2197321A00B94380 /* AppDelegate.swift in Sources */,
+				C9B8EE1B219734F700B94380 /* GOESP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
