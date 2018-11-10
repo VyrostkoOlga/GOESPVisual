@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9B8EDFB2197321A00B94380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EDFA2197321A00B94380 /* AppDelegate.swift */; };
+		C9B8EDFD2197321A00B94380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EDFC2197321A00B94380 /* ViewController.swift */; };
+		C9B8EDFF2197321B00B94380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8EDFE2197321B00B94380 /* Assets.xcassets */; };
+		C9B8EE022197321B00B94380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B8EE002197321B00B94380 /* Main.storyboard */; };
+		C9B8EE0E2197321C00B94380 /* GOESPVisualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EE0D2197321C00B94380 /* GOESPVisualTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9B8EE0A2197321C00B94380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B8EDEF2197321A00B94380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9B8EDF62197321A00B94380;
+			remoteInfo = GOESPVisual;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9B8EDF72197321A00B94380 /* GOESPVisual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOESPVisual.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B8EDFA2197321A00B94380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9B8EDFC2197321A00B94380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9B8EDFE2197321B00B94380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9B8EE012197321B00B94380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9B8EE032197321B00B94380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B8EE042197321B00B94380 /* GOESPVisual.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GOESPVisual.entitlements; sourceTree = "<group>"; };
+		C9B8EE092197321C00B94380 /* GOESPVisualTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOESPVisualTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B8EE0D2197321C00B94380 /* GOESPVisualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOESPVisualTests.swift; sourceTree = "<group>"; };
+		C9B8EE0F2197321C00B94380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9B8EDF42197321A00B94380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B8EE062197321C00B94380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9B8EDEE2197321A00B94380 = {
+			isa = PBXGroup;
+			children = (
+				C9B8EDF92197321A00B94380 /* GOESPVisual */,
+				C9B8EE0C2197321C00B94380 /* GOESPVisualTests */,
+				C9B8EDF82197321A00B94380 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9B8EDF82197321A00B94380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B8EDF72197321A00B94380 /* GOESPVisual.app */,
+				C9B8EE092197321C00B94380 /* GOESPVisualTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9B8EDF92197321A00B94380 /* GOESPVisual */ = {
+			isa = PBXGroup;
+			children = (
+				C9B8EDFA2197321A00B94380 /* AppDelegate.swift */,
+				C9B8EDFC2197321A00B94380 /* ViewController.swift */,
+				C9B8EDFE2197321B00B94380 /* Assets.xcassets */,
+				C9B8EE002197321B00B94380 /* Main.storyboard */,
+				C9B8EE032197321B00B94380 /* Info.plist */,
+				C9B8EE042197321B00B94380 /* GOESPVisual.entitlements */,
+			);
+			path = GOESPVisual;
+			sourceTree = "<group>";
+		};
+		C9B8EE0C2197321C00B94380 /* GOESPVisualTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9B8EE0D2197321C00B94380 /* GOESPVisualTests.swift */,
+				C9B8EE0F2197321C00B94380 /* Info.plist */,
+			);
+			path = GOESPVisualTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9B8EDF62197321A00B94380 /* GOESPVisual */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B8EE122197321C00B94380 /* Build configuration list for PBXNativeTarget "GOESPVisual" */;
+			buildPhases = (
+				C9B8EDF32197321A00B94380 /* Sources */,
+				C9B8EDF42197321A00B94380 /* Frameworks */,
+				C9B8EDF52197321A00B94380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOESPVisual;
+			productName = GOESPVisual;
+			productReference = C9B8EDF72197321A00B94380 /* GOESPVisual.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9B8EE082197321C00B94380 /* GOESPVisualTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B8EE152197321C00B94380 /* Build configuration list for PBXNativeTarget "GOESPVisualTests" */;
+			buildPhases = (
+				C9B8EE052197321C00B94380 /* Sources */,
+				C9B8EE062197321C00B94380 /* Frameworks */,
+				C9B8EE072197321C00B94380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9B8EE0B2197321C00B94380 /* PBXTargetDependency */,
+			);
+			name = GOESPVisualTests;
+			productName = GOESPVisualTests;
+			productReference = C9B8EE092197321C00B94380 /* GOESPVisualTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9B8EDEF2197321A00B94380 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = olgavyrostko;
+				TargetAttributes = {
+					C9B8EDF62197321A00B94380 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C9B8EE082197321C00B94380 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C9B8EDF62197321A00B94380;
+					};
+				};
+			};
+			buildConfigurationList = C9B8EDF22197321A00B94380 /* Build configuration list for PBXProject "GOESPVisual" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9B8EDEE2197321A00B94380;
+			productRefGroup = C9B8EDF82197321A00B94380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9B8EDF62197321A00B94380 /* GOESPVisual */,
+				C9B8EE082197321C00B94380 /* GOESPVisualTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9B8EDF52197321A00B94380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B8EDFF2197321B00B94380 /* Assets.xcassets in Resources */,
+				C9B8EE022197321B00B94380 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B8EE072197321C00B94380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9B8EDF32197321A00B94380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B8EDFD2197321A00B94380 /* ViewController.swift in Sources */,
+				C9B8EDFB2197321A00B94380 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B8EE052197321C00B94380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B8EE0E2197321C00B94380 /* GOESPVisualTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9B8EE0B2197321C00B94380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9B8EDF62197321A00B94380 /* GOESPVisual */;
+			targetProxy = C9B8EE0A2197321C00B94380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9B8EE002197321B00B94380 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B8EE012197321B00B94380 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9B8EE102197321C00B94380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9B8EE112197321C00B94380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C9B8EE132197321C00B94380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GOESPVisual/GOESPVisual.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PRGDGY2P6L;
+				INFOPLIST_FILE = GOESPVisual/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = olga.vyrostko.GOESPVisual;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C9B8EE142197321C00B94380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GOESPVisual/GOESPVisual.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PRGDGY2P6L;
+				INFOPLIST_FILE = GOESPVisual/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = olga.vyrostko.GOESPVisual;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		C9B8EE162197321C00B94380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PRGDGY2P6L;
+				INFOPLIST_FILE = GOESPVisualTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = olga.vyrostko.GOESPVisualTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOESPVisual.app/Contents/MacOS/GOESPVisual";
+			};
+			name = Debug;
+		};
+		C9B8EE172197321C00B94380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PRGDGY2P6L;
+				INFOPLIST_FILE = GOESPVisualTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = olga.vyrostko.GOESPVisualTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOESPVisual.app/Contents/MacOS/GOESPVisual";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9B8EDF22197321A00B94380 /* Build configuration list for PBXProject "GOESPVisual" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B8EE102197321C00B94380 /* Debug */,
+				C9B8EE112197321C00B94380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B8EE122197321C00B94380 /* Build configuration list for PBXNativeTarget "GOESPVisual" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B8EE132197321C00B94380 /* Debug */,
+				C9B8EE142197321C00B94380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B8EE152197321C00B94380 /* Build configuration list for PBXNativeTarget "GOESPVisualTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B8EE162197321C00B94380 /* Debug */,
+				C9B8EE172197321C00B94380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9B8EDEF2197321A00B94380 /* Project object */;
+}
