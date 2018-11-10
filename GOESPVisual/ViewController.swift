@@ -8,12 +8,17 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+final class ViewController: NSViewController {
+
+    enum Mode {
+        case build
+        case search
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let grammar = GOESp
     }
 
     override var representedObject: Any? {
