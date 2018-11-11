@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9351ADD21981859006A828A /* GOESPQueuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9351ADC21981859006A828A /* GOESPQueuesView.swift */; };
+		C9351ADF21981892006A828A /* GOESPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9351ADE21981892006A828A /* GOESPView.swift */; };
+		C9351AE12198197B006A828A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9351AE02198197B006A828A /* Label.swift */; };
 		C9B8EDFB2197321A00B94380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EDFA2197321A00B94380 /* AppDelegate.swift */; };
 		C9B8EDFD2197321A00B94380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B8EDFC2197321A00B94380 /* ViewController.swift */; };
 		C9B8EDFF2197321B00B94380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B8EDFE2197321B00B94380 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9351ADC21981859006A828A /* GOESPQueuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOESPQueuesView.swift; sourceTree = "<group>"; };
+		C9351ADE21981892006A828A /* GOESPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOESPView.swift; sourceTree = "<group>"; };
+		C9351AE02198197B006A828A /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		C9B8EDF72197321A00B94380 /* GOESPVisual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOESPVisual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B8EDFA2197321A00B94380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B8EDFC2197321A00B94380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9351ADB219817E2006A828A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9351ADC21981859006A828A /* GOESPQueuesView.swift */,
+				C9351ADE21981892006A828A /* GOESPView.swift */,
+				C9351AE02198197B006A828A /* Label.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C9B8EDEE2197321A00B94380 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +96,7 @@
 		C9B8EDF92197321A00B94380 /* GOESPVisual */ = {
 			isa = PBXGroup;
 			children = (
+				C9351ADB219817E2006A828A /* View */,
 				C9B8EE18219734B400B94380 /* GOESP */,
 				C9B8EDFA2197321A00B94380 /* AppDelegate.swift */,
 				C9B8EDFC2197321A00B94380 /* ViewController.swift */,
@@ -211,8 +228,11 @@
 			files = (
 				C9B8EE1C219734F700B94380 /* StringExtension.swift in Sources */,
 				C9B8EDFD2197321A00B94380 /* ViewController.swift in Sources */,
+				C9351ADD21981859006A828A /* GOESPQueuesView.swift in Sources */,
 				C9B8EDFB2197321A00B94380 /* AppDelegate.swift in Sources */,
 				C9B8EE1B219734F700B94380 /* GOESP.swift in Sources */,
+				C9351AE12198197B006A828A /* Label.swift in Sources */,
+				C9351ADF21981892006A828A /* GOESPView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

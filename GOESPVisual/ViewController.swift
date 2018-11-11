@@ -15,71 +15,98 @@ final class ViewController: NSViewController {
         case search
     }
 
-    private let grammar = GOESP.build(str: "AAACA")
-    private var labels = [[NSTextField]]()
+    private let string = "AAACA"
+    private lazy var grammar = GOESP.build(str: string)
+    private let grammarView: (GOESPView & NSView) = {
+        let view = GOESPQueuesView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    private let searchTextField: NSTextField = {
+        let textField = NSTextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+
+    private lazy var nextBtn: NSButton = {
+        let btn = NSButton(title: "Next", target: self, action: #selector(nextButtonDidPressed))
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.isEnabled = false
+        return btn
+    }()
+    private lazy var startBtn: NSButton = {
+        let btn = NSButton(title: "Start", target: self, action: #selector(startButtonDidPressed))
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        return btn
+    }()
+
+    private var steps = [IndexPath]()
+    private var currentStep: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        labels = grammar.queues.map {
-            return $0.map { makeLabel(mark: $0) }
-        }
-        var prevView: NSView?
-        for idx in 0..<labels.count {
-            let layer = labels[idx]
-            let view = NSView()
-            view.translatesAutoresizingMaskIntoConstraints = false
-            self.view.addSubview(view)
-            let bottomConstraint: NSLayoutConstraint
-            if let prevView = prevView {
-                bottomConstraint = view.bottomAnchor.constraint(equalTo: prevView.topAnchor)
-            } else {
-                bottomConstraint = view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-            }
-            NSLayoutConstraint.activate([
-                bottomConstraint,
-                view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-                view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
-                //view.heightAnchor.constraint(equalToConstant: 4.0)
-            ])
-            prevView = view
+        view.addSubview(grammarView)
+        view.addSubview(nextBtn)
+        view.addSubview(startBtn)
+        view.addSubview(searchTextField)
 
-            var prevLabel: NSTextField?
-            layer.forEach {
-                view.addSubview($0)
-                $0.translatesAutoresizingMaskIntoConstraints = false
-                let leadingConstraint: NSLayoutConstraint
-                if let prevLabel = prevLabel {
-                    leadingConstraint = $0.leadingAnchor.constraint(equalTo: prevLabel.trailingAnchor)
-                } else {
-                    leadingConstraint = $0.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-                }
-                NSLayoutConstraint.activate([
-                    leadingConstraint,
-                    $0.topAnchor.constraint(equalTo: view.topAnchor),
-                    $0.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
-                prevLabel = $0
-            }
-            if let prevLabel = prevLabel {
-                prevLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor).isActive = true
-            }
-        }
-        if let prevView = prevView {
-            NSLayoutConstraint.activate([
-                prevView.topAnchor.constraint(lessThanOrEqualTo: view.topAnchor)
-            ])
-        }
+        searchTextField.delegate = self
+        NSLayoutConstraint.activate([
+            searchTextField.topAnchor.constraint(equalTo: view.topAnchor),
+            searchTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+
+            startBtn.leadingAnchor.constraint(equalTo: searchTextField.trailingAnchor),
+            startBtn.topAnchor.constraint(equalTo: searchTextField.topAnchor),
+            startBtn.bottomAnchor.constraint(equalTo: searchTextField.bottomAnchor),
+
+            nextBtn.topAnchor.constraint(equalTo: searchTextField.topAnchor),
+            nextBtn.leadingAnchor.constraint(equalTo: startBtn.trailingAnchor),
+            nextBtn.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            nextBtn.bottomAnchor.constraint(equalTo: searchTextField.bottomAnchor),
+
+            grammarView.topAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: 10.0),
+            grammarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            grammarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            grammarView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+
+        grammarView.configure(grammar: grammar)
     }
 
-    private func makeLabel(mark: Int) -> NSTextField {
-        let textField = NSTextField(string: "\(mark)")
-        textField.isBezeled = false
-        textField.drawsBackground = false
-        textField.isEditable = false
-        textField.isSelectable = false
-        textField.textColor = .black
-        textField.backgroundColor = .white
-        return textField
+    @objc func startButtonDidPressed() {
+        currentStep = 0
+        steps = []
+        nextBtn.isEnabled = false
+        startBtn.isEnabled = false
+        _ = grammar.searchDeep2(substring: searchTextField.stringValue) { [weak self] (level, symbol) in
+            guard let sself = self else { return }
+            sself.steps.append(IndexPath(item: symbol, section: level))
+        }
+        nextBtn.isEnabled = true
+        startBtn.isEnabled = true
+    }
+
+    @objc func nextButtonDidPressed() {
+        guard currentStep < steps.count else {
+            nextBtn.title = "Finished"
+            nextBtn.isEnabled = false
+            return
+        }
+        let step = steps[currentStep]
+        grammarView.didSelect(level: step.section, symbol: step.item)
+        currentStep += 1
+        if currentStep >= steps.count {
+            nextBtn.title = "Finished"
+            nextBtn.isEnabled = false
+        }
+    }
+}
+
+extension ViewController: NSTextFieldDelegate {
+    func control(_ control: NSControl, textShouldEndEditing fieldEditor: NSText) -> Bool {
+        startButtonDidPressed()
+        return true
     }
 }
 
